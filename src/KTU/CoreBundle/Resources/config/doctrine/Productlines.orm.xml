@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="KTU\CoreBundle\Entity\Productlines" table="productlines">
+    <id name="productline" type="string" column="productLine" length="50">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="textdescription" type="string" column="textDescription" length="4000" nullable="true"/>
+    <field name="htmldescription" type="text" column="htmlDescription" nullable="true"/>
+    <field name="image" type="blob" column="image" nullable="true"/>
+  </entity>
+</doctrine-mapping>
